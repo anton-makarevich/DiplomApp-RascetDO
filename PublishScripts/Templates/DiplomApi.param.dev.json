@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "DiplomApi"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "6d9a1353-48c4-43d7-85e0-141803e550b5"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-NorthEurope"
+  }
+}

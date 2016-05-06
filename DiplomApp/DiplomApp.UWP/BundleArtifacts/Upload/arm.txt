@@ -1,0 +1,1 @@
+MainPackage=I:\bntu\prepod\diplomy\2015-16\Bychkouski\Project\DiplomApp\DiplomApp.UWP\bin\ARM\Release\Upload\DiplomApp.UWP_1.0.0.0_ARM.appx
