@@ -486,8 +486,10 @@
             Szim(sloIcount) = CStr(RezF(2))
             mTau(sloIcount) = CStr(AnglesF(3))
             mSigma(sloIcount) = CStr(AnglesF(4))
-                
-
+            Rast(sloIcount)= CStr(RezF(1))
+            If sloIcount=1
+                Progib =CStr(RezF(3))
+            End If
         Next sloIcount
 
         model.Szim1=Szim(1)
@@ -502,6 +504,12 @@
         model.Tau2 = mTau(2)
         model.Tau3 = mTau(3)
 
+        model.R1=Rast(1)
+        model.R2=Rast(2)
+        model.R3=Rast(3)
+
+        model.D=Progib
+                
         Calculate = model
 
     End Function

@@ -32,7 +32,12 @@ namespace DiplomApp.Views
             {
                 Text = "слой 3"
             };
-            
+
+            var dLabel = new Label
+            {
+                Text = "прогиб, мм"
+            };
+
 
             var titleLabel = new Label
             {
@@ -51,7 +56,11 @@ namespace DiplomApp.Views
             {
                 Text = "касательные"
             };
-                       
+
+            var rLabel = new Label
+            {
+                Text = "растягивающие"
+            };
 
             var s1Label = new Label();
             s1Label.SetBinding(Label.TextProperty, nameof(_viewModel.S1));
@@ -74,6 +83,16 @@ namespace DiplomApp.Views
             var t3Label = new Label();
             t3Label.SetBinding(Label.TextProperty, nameof(_viewModel.T3));
 
+            var r1Label = new Label();
+            r1Label.SetBinding(Label.TextProperty, nameof(_viewModel.R1));
+            var r2Label = new Label();
+            r2Label.SetBinding(Label.TextProperty, nameof(_viewModel.R2));
+            var r3Label = new Label();
+            r3Label.SetBinding(Label.TextProperty, nameof(_viewModel.R3));
+
+            var d1Label = new Label();
+            d1Label.SetBinding(Label.TextProperty, nameof(_viewModel.D));
+
             var calcButton = new Button
             {
                 Text = "Назад"
@@ -88,6 +107,7 @@ namespace DiplomApp.Views
                     new RowDefinition(),
                     new RowDefinition(),
                     new RowDefinition(),
+                    new RowDefinition(),
                     new RowDefinition()
                 },
                 ColumnDefinitions =
@@ -95,29 +115,37 @@ namespace DiplomApp.Views
                     new ColumnDefinition(),
                     new ColumnDefinition(),
                     new ColumnDefinition(),
+                    new ColumnDefinition(),
                     new ColumnDefinition()
                 },
                 Children =
                 {
-                    {titleLabel,1,4,0,1 },
+                    {titleLabel,1,5,0,1 },
                     {sLabel,1,1 },
                     {nLabel,2,1 },
                     {tLabel,3,1 },
+                    {rLabel,4,1 },
 
                     {l1Label,0,2 },
                     {s1Label,1,2 },
                     {n1Label,2,2 },
                     {t1Label,3,2 },
+                    {r1Label,4,2 },
 
                     {l2Label,0,3 },
                     {s2Label,1,3 },
                     {n2Label,2,3 },
                     {t2Label,3,3 },
+                    {r2Label,4,3 },
 
                     {l3Label,0,4 },
                     {s3Label,1,4 },
                     {n3Label,2,4 },
-                    {t3Label,3,4 }
+                    {t3Label,3,4 },
+                    {r3Label,4,4 },
+
+                    {dLabel,0,5 },
+                    {d1Label,1,5 },
                 }
             };
             Content = new StackLayout

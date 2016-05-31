@@ -27,5 +27,11 @@ namespace CommonClasses
         public double Sigma1 { get; set; }
         public double Sigma2 { get; set; }
         public double Sigma3 { get; set; }
+
+        public double D { get; set; }
+        
+        public double R1 { get; set; }
+        public double R2 { get; set; }
+        public double R3 { get; set; }
     }
 }

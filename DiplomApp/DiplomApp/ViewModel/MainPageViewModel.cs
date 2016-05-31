@@ -228,6 +228,56 @@ namespace DiplomApp.ViewModel
                 OnPropertyChanged();
             }
         }
+
+        public double R1
+        {
+            get
+            {
+                return _model.R1;
+            }
+            private set
+            {
+                _model.R1 = value;
+                OnPropertyChanged();
+            }
+        }
+        public double R2
+        {
+            get
+            {
+                return _model.R2;
+            }
+            private set
+            {
+                _model.Tau2 = value;
+                OnPropertyChanged();
+            }
+        }
+        public double R3
+        {
+            get
+            {
+                return _model.R3;
+            }
+            private set
+            {
+                _model.R3 = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public double D
+        {
+            get
+            {
+                return _model.D;
+            }
+            private set
+            {
+                _model.D = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
         #region Methods
